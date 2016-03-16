@@ -1,15 +1,17 @@
 <idea-plugin version="2">
-  <id>de.saxsys</id>
-  <name>mvvmFX-plugin</name>
-  <version>1.0-SNAPSHOT</version>
-  <vendor email="andre-krause@web.de" url="http://www.saxsys.de">Saxonia Systems</vendor>
+  <id>mvvmfx</id>
+  <name>mvvmFX</name>
+  <version>1.0</version>
+  <vendor email="andre-krause@web.de">Andre Krause</vendor>
 
   <description><![CDATA[
-      A pugin to create mvvmFX-Projects.
+      A pugin to create mvvmFX-Projects. U can either use Maven or Gradle.
+      Also the supported dependency injection frameworks guice and cdi can be used.
     ]]></description>
 
   <change-notes><![CDATA[
-      Initial version.
+      <b>1.0:</b><br>
+        - Added Project-Templates for all possible project types
     ]]>
   </change-notes>
 
@@ -23,6 +25,11 @@
   -->
 
   <extensions defaultExtensionNs="com.intellij">
-    <projectTemplate projectType="mvvmFX" templatePath="resources/projectTemplates/mvvmFX/mvvmFX Application.zip" category="true"/>
+    <projectTemplate id="mvvmfx-helloworld-maven" projectType="mvvmFX" templatePath="resources/projectTemplates/mvvmFX/helloworld-maven.zip" category="true"/>
+    <projectTemplate id="mvvmfx-helloworld-gradle" projectType="mvvmFX" templatePath="resources/projectTemplates/mvvmFX/helloworld-gradle.zip" category="true"/>
+    <projectTemplate id="mvvmfx-helloworld-cdi-maven" projectType="mvvmFX" templatePath="resources/projectTemplates/mvvmFX/helloworld-cdi-maven.zip" category="true"/>
+    <projectTemplate id="mvvmfx-helloworld-cdi-gradle" projectType="mvvmFX" templatePath="resources/projectTemplates/mvvmFX/helloworld-cdi-gradle.zip" category="true"/>
+    <projectTemplate id="mvvmfx-helloworld-guice-maven" projectType="mvvmFX" templatePath="resources/projectTemplates/mvvmFX/helloworld-guice-maven.zip" category="true"/>
+    <projectTemplate id="mvvmfx-helloworld-guice-gradle" projectType="mvvmFX" templatePath="resources/projectTemplates/mvvmFX/helloworld-guice-gradle.zip" category="true"/>
   </extensions>
 </idea-plugin>
