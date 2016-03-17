@@ -1,4 +1,4 @@
-# mvvmFX-plugin
+# mvvmFX-IntelliJ-Plugin
 Plugin for Intellij IDEA to create a [mvvmFX](https://github.com/sialcasa/mvvmFX "mvvmFX") Project.
 
 It provides project templates, so that you can easily create a mvvmFX project and start using it. The general project structure as all necessary dependencies are already included.
